@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: linear-gradient(to top left, rgba(53, 181, 91, 0.8), #437bc9);
+}
+
+h1, h2, h3 {
+    color: #eee;
+    font-family: 'Lobster';
+}
+
+p {
+    color: #eee;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
