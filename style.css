@@ -161,3 +161,11 @@ a {
   }
 }
 
+@media (max-width: 350px) {
+  #logo {
+    font-size: 18px;
+  }
+  .nav-item {
+    font-size: 14px;
+  }
+}
