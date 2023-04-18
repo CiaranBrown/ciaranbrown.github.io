@@ -140,7 +140,6 @@ a {
   }
 
   .navbar {
-    position: fixed;
     background-color: #496db6;
   }
 
@@ -168,54 +167,106 @@ a {
 
 @media (max-width: 500px) {
   #logo {
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 0px;
   }
 }
 
 /* About Me Section */
 
-.about {
+.about-section {
   display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+  flex-direction: column;
+  margin: 30px 50px 15px;
 }
 
 .about-image {
-  width: 250px;
-  height: 450px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 170px;
+  height: 250px;
   border-radius: 150px;
   border: #eee 3px solid;
-  margin-top: 80px;
-}
-
-.about-me {
-  display: inline;
-  justify-content: flex-end;
-  float: right;
-  margin-top: 80px;
-  margin-right: 120px;
 }
 
 .about-me span {
-  font-size: 25px;
+  font-size: 18px;
   font-family: 'Zilla Slab', serif;
 }
 
 .about-me h2 {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   text-decoration: overline underline;
   text-underline-offset: 15px;
   letter-spacing: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .about-me p {
-  width: 500px;
-  padding: 20px;
+  font-size: 12px;
   margin: 10px;
-  font-size: 16px;
   text-align: center;
   letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 2440px) {
+  .about-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-me {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-section {
+    margin: 60px 60px 60px 60px;
+  }
+  .about-image {
+    width: 350px;
+    height: 450px;
+    border: #eee 5px solid;
+  }
+  .about-me span {
+    font-size: 20px;
+  }
+  .about-me h2 {
+    font-size: 40px;
+  }
+  .about-me p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-section {
+    margin: 60px 60px 60px 60px;
+  }
+  .about-me {
+    margin-top: 80px;
+    margin-right: 40px;
+  }
+  .about-image {
+    width: 450px;
+    height: 650px;
+    border: #eee 7px solid;
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+  .about-me span {
+    font-size: 25px;
+  }
+  .about-me h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .about-me p {
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+  }
 }
