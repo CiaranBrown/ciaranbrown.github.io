@@ -184,8 +184,8 @@ a {
   display: block;
   margin: auto;
   margin-bottom: 30px;
-  width: 170px;
-  height: 250px;
+  width: 200px;
+  height: 300px;
   border-radius: 150px;
   border: #eee 3px solid;
 }
@@ -229,6 +229,7 @@ a {
     width: 350px;
     height: 450px;
     border: #eee 5px solid;
+    margin-right: 50px;
   }
   .about-me span {
     font-size: 20px;
@@ -238,6 +239,8 @@ a {
   }
   .about-me p {
     font-size: 14px;
+    padding: 10px;
+    margin: 10px;
   }
 }
 
@@ -247,7 +250,7 @@ a {
   }
   .about-me {
     margin-top: 80px;
-    margin-right: 40px;
+    margin-left: 120px;
   }
   .about-image {
     width: 450px;
