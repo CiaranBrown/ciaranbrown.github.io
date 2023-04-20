@@ -29,6 +29,7 @@ a {
   text-decoration: none;
 }
 
+
 /* Navigation Bar */
 
 .navbar {
@@ -172,12 +173,13 @@ a {
   }
 }
 
+
 /* About Me Section */
 
 .about-section {
   display: flex;
   flex-direction: column;
-  margin: 30px 50px 15px;
+  margin: 30px 20px 60px 20px;
 }
 
 .about-image {
@@ -221,9 +223,15 @@ a {
   }
 }
 
+@media (min-width: 760px) {
+  .about-section {
+    margin: 50px 50px 50px 50px;
+  }
+}
+
 @media (min-width: 1000px) {
   .about-section {
-    margin: 60px 60px 60px 60px;
+    margin: 60px;
   }
   .about-image {
     width: 350px;
@@ -246,7 +254,7 @@ a {
 
 @media (min-width: 1400px) {
   .about-section {
-    margin: 60px 60px 60px 60px;
+    margin: 60px 60px 120px 60px;
   }
   .about-me {
     margin-top: 80px;
@@ -273,3 +281,116 @@ a {
     font-size: 16px;
   }
 }
+
+
+/* My Future Section */
+
+.future-line {
+  width: 75%;
+  margin: auto;
+}
+
+.future-section {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 20px 60px 20px;
+}
+
+.future-image {
+  display: block;
+  margin: auto;
+  width: 210px;
+  height: 375px;
+  border-radius: 150px;
+  border: #eee 3px solid;
+  margin-top: 30px;
+}
+
+.my-future h2 {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: overline underline;
+  text-underline-offset: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.my-future p {
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 2440px) {
+  .future-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .my-future {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 760px) {
+  .future-section {
+      margin: 50px 50px 50px 50px;
+  }
+  .future-image {
+    width: 250px;
+    height: 410px;
+    border: #eee 5px solid;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  .my-future {
+    margin-top: 35px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .future-section {
+    margin: 60px;
+  }
+  .future-image {
+    width: 350px;
+    height: 510px;
+    border: #eee 5px solid;
+    margin-right: 50px;
+  }
+  .my-future h2 {
+    font-size: 40px;
+  }
+  .my-future p {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .future-section {
+    margin: 60px 120px 60px 130px;
+  }
+  .my-future {
+    margin-top: 80px;
+  }
+  .future-image {
+    width: 400px;
+    height: 720px;
+    border: #eee 7px solid;
+    margin-top: 40px;
+  }
+  .my-future h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .my-future p {
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+  }
+}
+
