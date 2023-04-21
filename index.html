@@ -30,14 +30,16 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-      <h2 id="logo"><a href="#">My Website | Ciaran Brown</a></h2>
+      <h2 id="logo"><a href="#home">My Website | Ciaran Brown</a></h2>
 
       <ul class="nav-menu">
-        <li class="nav-item" id="navLinks"><a href="#about-me">About Me</a></li>
-        <li class="nav-item" id="navLinks">
-          <a href="#future-career">Future Career</a>
+        <li class="nav-item">
+          <a href="#about-me" class="nav-link">About Me</a></li>
+        <li class="nav-item">
+          <a href="#future-career" class="nav-link">Future Career</a>
         </li>
-        <li class="nav-item" id="navLinks"><a href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -49,7 +51,7 @@
     
     <main>
       <!-- About Section -->
-      <section>
+      <section id="about-me">
         <div class="about-section">
         <img
           src="img/Me and Dad.jpg"
@@ -82,7 +84,7 @@
       </section>
 
       <!-- My Future Section -->
-      <section>
+      <section id="future-career">
         <hr class="future-line" />
         <div class="future-section">
         <div class="my-future">
@@ -117,7 +119,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section>
+      <section id="contact">
         <hr class="contact-line" />
         <div class="contact-section">
         <img
