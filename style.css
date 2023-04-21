@@ -29,6 +29,11 @@ a {
   text-decoration: none;
 }
 
+hr {
+  width: 75%;
+  margin: auto;
+}
+
 
 /* Navigation Bar */
 
@@ -258,14 +263,14 @@ a {
   }
   .about-me {
     margin-top: 80px;
-    margin-left: 120px;
+    margin-left: 150px;
   }
   .about-image {
-    width: 450px;
-    height: 650px;
+    width: 400px;
+    height: 600px;
     border: #eee 7px solid;
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 120px;
   }
   .about-me span {
     font-size: 25px;
@@ -285,10 +290,6 @@ a {
 
 /* My Future Section */
 
-.future-line {
-  width: 75%;
-  margin: auto;
-}
 
 .future-section {
   display: flex;
@@ -334,14 +335,13 @@ a {
 
 @media (min-width: 760px) {
   .future-section {
-      margin: 50px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
   }
   .future-image {
     width: 250px;
     height: 410px;
     border: #eee 5px solid;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin: 10px 20px 10px 30px;
   }
   .my-future {
     margin-top: 35px;
@@ -371,16 +371,17 @@ a {
 
 @media (min-width: 1400px) {
   .future-section {
-    margin: 60px 120px 60px 130px;
+    margin: 60px 120px 120px 130px;
   }
   .my-future {
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-right: 180px;
   }
   .future-image {
     width: 400px;
-    height: 720px;
+    height: 670px;
     border: #eee 7px solid;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .my-future h2 {
     font-size: 50px;
@@ -394,3 +395,166 @@ a {
   }
 }
 
+
+/* Contact Section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 20px 60px 20px;
+}
+
+.contact-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 300px;
+  border-radius: 150px;
+  border: #eee 3px solid;
+}
+
+.contact-section h2 {
+  font-size: 30px;
+  text-decoration: overline underline;
+  text-underline-offset: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact-section p {
+  margin: 15px 30px 20px 30px;
+  letter-spacing: 1px;
+}
+
+.contact-find {
+  text-align: left;
+  margin-top: 50px;
+}
+
+.contact-icons {
+  color: #eee;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  font-size: 33px;
+  cursor: pointer;
+  padding: 5px;
+  text-align: left;
+}
+
+.contact-icons a {
+  transition: all 0.5s;
+}
+
+.contact-icons a:hover {
+  opacity: 0.5;
+}
+
+.contact-icons-2,
+.contact-icons-3 {
+  color: #eee;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.email-phone p {
+  font-size: 16px;
+}
+
+.github-repo {
+  text-align: center;
+  margin-top: 80px;
+  color: #eee;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+}
+
+.github-repo a {
+  color: #2353dc;
+}
+
+.github-repo a:hover {
+  color: #801de2
+}
+
+@media only screen and (min-width: 760px) and (max-width: 2440px) {
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+}
+
+@media (min-width: 760px) {
+  .contact-section {
+    margin: 70px 50px 50px 0px;
+  }
+  .contact-image {
+    width: 220px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact-section {
+    margin-top: 90px;
+  }
+  .contact-image {
+    width: 300px;
+    height: 500px;
+    border: #eee 5px solid;
+    margin-left: 100px;
+  }
+  .contact-section h2 {
+    font-size: 40px;
+  }
+  .contact-section p {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .contact-me {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-section {
+    margin: 60px 60px 120px 60px;
+  }
+  .contact-me {
+    margin-top: 80px;
+    margin-left: 120px;
+  }
+  .contact-image {
+    width: 400px;
+    height: 600px;
+    border: #eee 7px solid;
+    margin-top: 40px;
+    margin-left: 120px;
+  }
+  .contact-section h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .contact-section p {
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  .contact-icons {
+    font-size: 40px;
+  }
+  .contact-icons-2,
+  .contact-icons-3 {
+    font-size: 20px;
+  }
+  .email-phone p {
+    font-size: 18px;
+  }
+  .github-repo {
+    font-size: 20px;
+  }
+}
